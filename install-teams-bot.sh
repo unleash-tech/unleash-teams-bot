@@ -102,8 +102,8 @@ az bot msteams create \
   --name "$appName" \
   --location "$location"
 
-echo "Bot id: $appId"
-echo "Bot password : $appSecret"
+echo "Bot Id: $appId"
+echo "Bot Password : $appSecret"
 
 echo "✅ App registration and bot setup complete."
 echo "⚠️  You still need to manually **admin consent** the app in the Azure portal."
