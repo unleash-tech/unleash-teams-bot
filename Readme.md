@@ -52,3 +52,25 @@ Replace the placeholders in the script with your actual values:
 
 - `<your-resource-group>` — The name of your Azure resource group  
 - `<bot-endpoint-url>` — The bot endpoint URL provided by your Unleash representative
+
+### 4. Share the Output
+
+Once the script finishes, it will output the **Bot ID** and **Password**, which are required for the bot server to function.  
+Make sure to provide these values to your Unleash representative to complete the setup.
+
+
+## Step 2: Grant Admin Consent to the Entra Application
+
+In order for the Unleash Teams Bot to function properly, you must grant **admin consent** to its Entra ID application.
+
+### Instructions
+
+1. Open the following URL in your browser (replace `{bot-id}` with the actual Bot ID from the script output):
+
+`https://login.microsoftonline.com/common/adminconsent?client_id={bot-id}`
+
+2. Sign in using an account with **administrator privileges** in your Azure tenant.
+
+3. Review and approve the requested permissions for the application.
+
+> **Note:** After approval, you may see an error message — this is expected and can be safely ignored.
