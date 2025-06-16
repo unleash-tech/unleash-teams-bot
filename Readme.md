@@ -30,7 +30,8 @@ Make sure you are logged in with the correct user account and operating in the c
 
 ```bash
 az login
-az account set --subscription "<your-subscription-name-or-id>"
+az account set --subscription "<your-subscription-name-or-id>
+```
 
 Replace <your-subscription-name-or-id> with the name or ID of the Azure subscription you intend to use.
 
