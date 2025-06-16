@@ -63,8 +63,6 @@ Make sure to provide these values to your Unleash representative to complete the
 
 In order for the Unleash Teams Bot to function properly, you must grant **admin consent** to its Entra ID application.
 
-### Instructions
-
 1. Open the following URL in your browser (replace `{bot-id}` with the actual Bot ID from the script output):
 
 `https://login.microsoftonline.com/common/adminconsent?client_id={bot-id}`
@@ -74,3 +72,31 @@ In order for the Unleash Teams Bot to function properly, you must grant **admin 
 3. Review and approve the requested permissions for the application.
 
 > **Note:** After approval, you may see an error message — this is expected and can be safely ignored.
+
+
+## Step 3: Install the Unleash Application in the Teams Admin Portal
+
+To make the Unleash Teams Bot available in Microsoft Teams, you need to upload it as a custom app via the Teams admin portal.
+
+1. Open the [Microsoft Teams admin portal](https://admin.teams.microsoft.com/).
+
+2. Navigate to:  
+   **Teams apps > Manage apps**
+
+3. Ensure the **Upload custom apps** option is enabled.
+
+   ![Enable Upload Custom Apps](images/upload-custom-apps-enabled.png)
+
+4. Request the `.zip` file for the Unleash bot application from your Unleash representative.
+
+5. Upload the custom Teams app using the provided `.zip` file.
+
+   ![Upload Custom App](images/upload-unleash-app.png)
+
+6. After uploading, verify that the Unleash app appears in the list of available applications in the Teams admin portal.
+
+   ![Unleash App Visible](images/unleash-app-installed.png)
+
+7. Ensure the app is made available either **to everyone** or **to the specific team(s)** that should have access.
+
+> **Note:** It may take up to **24 hours** for the custom app to become available for installation in a specific team and to be invited to a channel.
