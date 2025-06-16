@@ -40,3 +40,15 @@ Replace <your-subscription-name-or-id> with the name or ID of the Azure subscrip
 Request the **bot endpoint URL** from your Unleash representative.
 
 
+### 3. Run the Installation Script
+
+Execute the following script to deploy the necessary Azure resources (Entra ID application and Bot Service):
+
+```bash
+./install-unleash-teams-bot.sh -resourceGroup <your-resource-group> -botEndpoint <bot-endpoint-url>
+```
+
+Replace the placeholders in the script with your actual values:
+
+- `<your-resource-group>` — The name of your Azure resource group  
+- `<bot-endpoint-url>` — The bot endpoint URL provided by your Unleash representative
