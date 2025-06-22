@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 while [[ "$#" -gt 0 ]]; do
     case $1 in
@@ -22,9 +23,7 @@ location="global"
 
 # Microsoft Graph permission IDs (App role GUIDs)
 permissionIds=(
-  "7b2449af-6ccd-4f4d-9f78-e550c193f0d1" # ChannelMessage.Read.All
   "7ab1d382-f21e-4acd-a863-ba3e13f7da61" # Directory.Read.All
-  "01d4889c-1287-42c6-ac1f-5d1e02578ef6" # File s.Read.All
   "332a536c-c7ef-4017-ab91-336970924f0d" # Sites.Read.All
   "242607bd-1d2c-432c-82eb-bdb27baa23ab" # TeamSettings.Read.All
   "df021288-bdef-4463-88db-98f22de89214" # User.Read.All
